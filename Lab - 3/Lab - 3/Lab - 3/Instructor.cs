@@ -3,32 +3,64 @@
     class Instructor
     {
         #region Instructor Variables
-        private string teacherFirstName;
-        private string teacherLastName;
-        private string courseName;
-        private int studentGrade = 0;
+        private string teacherFirstName = "Kenny";
+        private string teacherLastName = "Powers";
+        private string courseName = "Gym";
+        //private int studentGrade = 0;
+        //public Student student;
+      
+        #endregion
+
+        #region Instructor Constructor
+
+        public Instructor(string first, string last, string course)
+        {
+            this.teacherFirstName = first;
+            this.teacherLastName = last;
+            this.courseName = course;
+            
+        }
 
         #endregion
 
         #region Class Methods
-
-        public void SetStudentGrade(string student, int studentGrade)
+        public void SetStudentGrade(Student student, int grade)
         {
 
-        }
-        public void 
-        public string Print()
-        {
-            string fullNameAndCourse;
-            fullNameAndCourse = "";
-            fullNameAndCourse += this.teacherFirstName;
-            fullNameAndCourse += " ";
-            fullNameAndCourse += this.teacherLastName;
-            fullNameAndCourse += " ";
-            fullNameAndCourse += this.courseName;
-            return fullNameAndCourse;
+            student.StudentGrade(grade);
         }
 
+        
+        public void TeacherCreation(string first, string last, string course)
+        {
+            first = teacherFirstName;
+            last = teacherLastName;
+            course = courseName;
+        }
+
+        public string TeacherFullName()
+        {
+            string fullName;
+            fullName = "";
+            fullName += teacherFirstName;
+            if (teacherLastName != null)
+            {
+                fullName += " ";
+                fullName += teacherLastName;
+            }
+            return fullName;
+        }
+    
+
+        public string PrintTDetails()
+        {
+            string nameAndCourse;
+            nameAndCourse = "Teacher: ".PadLeft(5);
+            nameAndCourse += this.TeacherFullName().PadRight(10);
+            nameAndCourse += "Course Title: ";
+            nameAndCourse += this.courseName.PadRight(10);
+            return nameAndCourse;
+        }
         #endregion
     }
 }

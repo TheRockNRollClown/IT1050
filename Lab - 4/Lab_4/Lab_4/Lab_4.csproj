@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D831FED9-1394-48A3-A81B-5C7B3BACA0D9}</ProjectGuid>
+    <ProjectGuid>{DF886905-FC28-4291-BE6D-24AF2C57AA1E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab___3</RootNamespace>
-    <AssemblyName>Lab - 3</AssemblyName>
+    <RootNamespace>Lab_4</RootNamespace>
+    <AssemblyName>Lab_4</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Instructor.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Movie Methods and Variables.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
